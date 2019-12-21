@@ -165,7 +165,7 @@ img {
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 0.4em; /* Some padding */
   border-radius: 2px; /* Rounded corners */
-  font-size: 1.3em; /* Increase font size */
+  font-size: 1.7em; /* Increase font size */
 }
 
 #myBtnToTop:hover {
