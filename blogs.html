@@ -19,7 +19,7 @@
   <body>
       <!-- --------------------------------------------------------------------- --> 
   <div id="blogs" class="container">
-    <table style="width:100%;">
+    <table style="width:100%; margin-bottom:2%;">
       <tr>
         <td style="width:100%;" colspan="2">
           <div style="width:100%;
@@ -34,17 +34,12 @@
         </td>
       </tr>
     </table>  
-    <br/>
-    <br/>
-    <br/>
+
     Hello! Here I present the complete list of all the blogs I have written.
-    <a style="color:#f2f2f2" href="./index.html" target="_blank">Click to see My Profile.</a>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
+    <a style="color:#f2f2f2;" href="./index.html" target="_blank">Click to see My Profile.</a>
+
   <!-- --------------------------------------------------------------------- -->  
-    <table>  
+    <table style="width:100%; margin-top: 4%;">  
       <tr>
         <td style="width:30%; border: #f2f2f2 solid 2px;">
           <img src="./images/b15.jpg"/>
@@ -215,7 +210,31 @@
   <!-- --------------------------------------------------------------------- -->  
     </table>   
   </div>
+  <!-- --------------------------------------------------------------------- --> 
   
+  <button onclick="topFunction()" id="myBtnToTop" title="Go to top">Top</button>
+  <script>
+      //Get the button
+      var mybutton = document.getElementById("myBtnToTop");
+      
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      </script>  
+
   </body>
   
 </html>
