@@ -31,7 +31,7 @@ img {
 /* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
-#projects a{
+#projects table a{
   float: left;
   display: block;
   color: #1b242f;
@@ -46,12 +46,12 @@ img {
 }
 
 /* Change the color of links on hover */
-#projects a:hover {
+#projects table a:hover {
   background-color: #00a78e ;
   color: #000000;
 }
 
-#projects img{
+#projects table img{
   min-width: 200px;
 }
 
@@ -62,7 +62,7 @@ img {
 /* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
-#blogs a{
+#blogs table a{
   float: left;
   display: block;
   color: #1b242f;
@@ -77,12 +77,12 @@ img {
 }
 
 /* Change the color of links on hover */
-#blogs a:hover {
+#blogs table a:hover {
   background-color: #00a78e ;
   color: #000000;
 }
 
-#blogs img{
+#blogs table img{
   min-width: 200px;
 }
 
