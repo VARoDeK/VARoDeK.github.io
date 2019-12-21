@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  background-color: #f4f4f4;
+}
+/* -------------------------------------------------------------------------- */
+
+.container{
+  min-width: 100%;;
+  min-height: 100vh;
+  padding: 6%;
+  margin-top: 1%;
+  background: #1b242f;
+  color:#f2f2f2;
+  font-size:1em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+#projects a{
+  float: left;
+  display: block;
+  color: #1b242f;
+  text-align: center;
+  padding: 2%;
+  border-radius: 2px;
+  margin-left: 0.8%;
+  margin-right: 0.8%;
+  text-decoration: none;
+  font-size: 1.1em;
+  background-color: #f2f2f2;
+}
+
+/* Change the color of links on hover */
+#projects a:hover {
+  background-color: #00a78e ;
+  color: #000000;
+}
+
+#projects img{
+  min-width: 200px;
+}
+
+#projects td{
+  background-color: #1b242f;
+}
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+#blogs a{
+  float: left;
+  display: block;
+  color: #1b242f;
+  text-align: center;
+  padding: 2%;
+  border-radius: 2px;
+  margin-left: 0.8%;
+  margin-right: 0.8%;
+  text-decoration: none;
+  font-size: 1.1em;
+  background-color: #f2f2f2;
+}
+
+/* Change the color of links on hover */
+#blogs a:hover {
+  background-color: #00a78e ;
+  color: #000000;
+}
+
+#blogs img{
+  min-width: 200px;
+}
+
+#blogs td{
+  background-color: #1b242f;
+}
+
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+.topnav{
+  background-color: #1b242f;
+  padding-right: 0.8em;
+  padding-left: 0.8em;
+}
+
+  /* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 4%;
+  margin-left: 0.8%;
+  margin-right: 0.8%;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #dddFFF ;
+  color: #000000;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #00a78e;
+  color: white;
+}
+
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+.shadow {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+}
+
+.skillBox div{
+  background-color:#1b243f;
+  color:#f2f2f2;
+  font-size: 1.1em;
+  padding:10px 20px 10px 20px;
+  margin:10px 10px 10px 10px;
+  font-weight: bold;
+}
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+#myBtnToTop {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 18px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #00a78e; /* Set a background color */
+  color: #FFFFFF; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 0.4em; /* Some padding */
+  border-radius: 2px; /* Rounded corners */
+  font-size: 1.3em; /* Increase font size */
+}
+
+#myBtnToTop:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+@media (max-width: 480px){
+  #myBtnToTop{
+    font-size: 0.8em; /* Decrease font size */
+    padding:0.2em;}
+} 
+
+
+@media (max-width: 640px){
+  #myBtnToTop{ font-size: 1.1em; /* Decrease font size */}
+}
