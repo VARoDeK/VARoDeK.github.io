@@ -1,101 +1,205 @@
+/* ========================================================================== */
+/*                                VARIABLES                                   */
+/* ========================================================================== */
+:root {
+  --main-bg-color: #f4f4f4;
+
+  --container-bg-color: #f4f4f4;
+
+  --semi-container-bg-color: #1b242f;
+  --semi-container-font-color: #f2f2f2;
+
+  --skill-box-bg-color: #1b243f;
+  --skill-box-font-color: #f2f2f2;
+
+  --semi-container-a-0-bg-color: #f2f2f2;
+  --semi-container-a-0-font-color: #1b242f;
+  --semi-container-a-0-hover-bg-color: #00a78e;
+  --semi-container-a-0-hover-font-color: #000000;
+
+  --heading-bg-color: #f2f2f2;
+  --heading-font-color: #1b242f;
+
+  --top-nav-a-bg-color: #1b242f;
+  --top-nav-a-font-color: #f2f2f2;
+  --top-nav-a-active-bg-color: #00a78e;
+  --top-nav-a-active-font-color: #FFFFFF;
+  --top-nav-a-hover-bg-color: #dddFFF;
+  --top-nav-a-hover-font-color: #000000;
+
+  --button-to-top-bg-color: #00a78e;
+  --button-to-top-font-color: #FFFFFF;
+  --button-to-top-hover-bg-color: #555;
+  --button-to-top-hover-font-color: #FFFFFF;
+
+  --project-blog-td-border-color: #f2f2f2;
+
+  --font-size-0: 1em;
+  --font-size-1: 1.1em;
+  --font-size-2: 1.4em;
+  --font-size-3: 1.7em;
+
+  --padding-0: 0.4em;
+  --padding-1: 1%;
+  --padding-2: 2%;
+  --padding-3: 4%;
+  --padding-4: 6%;
+  --padding-5: 10%;
+  --padding-6: 18%;
+  --padding-7: 25%;
+
+  --margin-0: 1%;
+
+  --a-border-radius-0: 2px;
+
+}
+
+/* ========================================================================== */
+/*                                BORDER_BOX                                  */
+/* ========================================================================== */
 * {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
 
-body{
-  background-color: #f4f4f4;
+/* ========================================================================== */
+/*                                   IMAGE                                    */
+/* ========================================================================== */
+img {
+  max-width: 100%;
+  height: auto;
 }
-/* -------------------------------------------------------------------------- */
 
-.container{
-  min-width: 100%;;
-  min-height: 100vh;
-  padding: 6%;
-  margin-top: 1%;
-  background: #1b242f;
-  color:#f2f2f2;
-  font-size:1em;
+/* ========================================================================== */
+/*                                   SHADOW                                   */
+/* ========================================================================== */
+.shadow {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* ========================================================================== */
+/*                                CONTAINERS                                  */
+/* ========================================================================== */
+body {
+  background: var(--main-bg-color);
+}
+
+table {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 100%;
+  background: var(--container-bg-color);
+  padding-left: var(--padding-2);
+  padding-right: var(--padding-2);
 }
 
 img {
   max-width: 100%;
   height: auto;
 }
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
 
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
+.semi-container {
+  max-width: 100%;
+  min-height: 100vh;
+  padding: var(--padding-4);
+  margin-top: var(--margin-0);
+  background: var(--semi-container-bg-color);
+  color: var(--semi-container-font-color);
+  font-size: var(--font-size-0);
+}
+
+.heading {
+  background: var(--heading-bg-color);
+  color: var(--heading-font-color);
+  text-align: center;
+  width: 100%;
+}
+
+.skillBox div{
+  background-color:var(--skill-box-bg-color);
+  color:var(--skill-box-font-color);
+  font-size: 1.4em;
+  padding:10px 20px 10px 20px;
+  margin:10px 10px 10px 10px;
+}
+
+.li_container {
+  padding: var(--padding-1);
+  border: var(--project-blog-td-border-color) solid 2px;
+  margin-bottom: 10px;
+}
+/* ========================================================================== */
+/*                                OTHER_CSS                                   */
+/* ========================================================================== */
+
+.td_border td {
+  border: var(--project-blog-td-border-color) solid 2px;
+}
+
+/* ========================================================================== */
+
 #projects table a{
   float: left;
   display: block;
-  color: #1b242f;
+  color: var(--semi-container-a-0-font-color);
   text-align: center;
-  padding: 2%;
-  border-radius: 2px;
+  padding: var(--padding-2);
+  border-radius: var(--a-border-radius-0);
   margin-left: 0.8%;
   margin-right: 0.8%;
   text-decoration: none;
-  font-size: 1.1em;
-  background-color: #f2f2f2;
+  font-size: var(--font-size-1);
+  background-color: var(--semi-container-a-0-bg-color);
 }
 
 /* Change the color of links on hover */
 #projects table a:hover {
-  background-color: #00a78e ;
-  color: #000000;
+  background-color: var(--semi-container-a-0-hover-bg-color) ;
+  color: var(--semi-container-a-0-hover-font-color);
 }
 
 #projects table img{
   min-width: 200px;
 }
 
-#projects td{
-  background-color: #1b242f;
+/* ========================================================================== */
+
+.border{
+  border: var(--project-blog-td-border-color) solid 2px;
 }
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
+
+/* ========================================================================== */
+
 #blogs table a{
   float: left;
   display: block;
-  color: #1b242f;
+  color: var(--semi-container-a-0-font-color);
   text-align: center;
-  padding: 2%;
-  border-radius: 2px;
+  padding: var(--padding-2);
+  border-radius: var(--a-border-radius-0);
   margin-left: 0.8%;
   margin-right: 0.8%;
   text-decoration: none;
-  font-size: 1.1em;
-  background-color: #f2f2f2;
+  font-size: var(--font-size-1);
+  background-color: var(--semi-container-a-0-bg-color);
 }
 
 /* Change the color of links on hover */
 #blogs table a:hover {
-  background-color: #00a78e ;
-  color: #000000;
+  background-color: var(--semi-container-a-0-hover-bg-color) ;
+  color: var(--semi-container-a-0-hover-font-color);
 }
 
 #blogs table img{
   min-width: 200px;
 }
 
-#blogs td{
-  background-color: #1b242f;
-}
+/* ========================================================================== */
 
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
 .topnav{
-  background-color: #1b242f;
+  background-color: var(--semi-container-bg-color);
   padding-right: 0.6em;
   padding-left: 0.6em;
 }
@@ -104,7 +208,7 @@ img {
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: var(--top-nav-a-font-color);
   text-align: center;
   padding: 4%;
   margin-left: 0.8%;
@@ -115,43 +219,18 @@ img {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #dddFFF ;
-  color: #000000;
+  background-color: var(--top-nav-a-hover-bg-color) ;
+  color: var(--top-nav-a-hover-font-color);
 }
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-  background-color: #00a78e;
-  color: white;
+  background-color: var(--top-nav-a-active-bg-color);
+  color: var(--top-nav-a-active-font-color);
 }
 
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-img {
-  max-width: 100%;
-  height: auto;
-}
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-.shadow {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
-}
+/* ========================================================================== */
 
-.skillBox div{
-  background-color:#1b243f;
-  color:#f2f2f2;
-  font-size: 1.4em;
-  padding:10px 20px 10px 20px;
-  margin:10px 10px 10px 10px;
-}
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
 #myBtnToTop {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
@@ -160,18 +239,52 @@ img {
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: #00a78e; /* Set a background color */
-  color: #FFFFFF; /* Text color */
+  background-color: var(--button-to-top-bg-color); /* Set a background color */
+  color: var(--button-to-top-font-color); /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 0.4em; /* Some padding */
-  border-radius: 2px; /* Rounded corners */
-  font-size: 1.7em; /* Increase font size */
+  padding: var(--padding-0); /* Some padding */
+  border-radius: var(--a-border-radius-0); /* Rounded corners */
+  font-size: var(--font-size-3); /* Increase font size */
 }
 
 #myBtnToTop:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+  background-color: var(--button-to-top-hover-bg-color); /* Add a dark-grey background on hover */
 }
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
+/* ========================================================================== */
+/*                                  MEDIA                                     */
+/* ========================================================================== */
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 100%;
+    background: var(--container-bg-color);
+    padding-left: var(--padding-5);
+    padding-right: var(--padding-5);
+  } 
+}
+
+@media only screen and (min-width: 992px) {
+  .container {
+    max-width: 100%;
+    background: var(--container-bg-color);
+    padding-left: var(--padding-6);
+    padding-right: var(--padding-6);
+  } 
+}
+
+@media only screen and (min-width: 1200px) {
+    .container {
+      max-width: 100%;
+      background: var(--container-bg-color);
+      padding-left: var(--padding-7);
+      padding-right: var(--padding-7);
+    } 
+}
+
+@media only all and (orientation: portrait) {
+  .container {
+    max-width: 100%;
+    background: var(--container-bg-color);
+    padding-left: var(--padding-2);
+    padding-right: var(--padding-2);
+  }
+}
