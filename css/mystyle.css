@@ -118,11 +118,12 @@ img {
 }
 
 .skillBox div{
-  background-color:var(--skill-box-bg-color);
-  color:var(--skill-box-font-color);
-  font-size: 1.4em;
-  padding:10px 20px 10px 20px;
-  margin:10px 10px 10px 10px;
+  background-color: var(--skill-box-bg-color);
+  color: var(--skill-box-font-color);
+  font-size: var(--font-size-2);
+  padding: 10px 20px 10px 20px;
+  margin: 10px 10px 10px 10px;
+  white-space: nowrap;
 }
 
 .li_container {
