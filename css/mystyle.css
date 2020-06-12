@@ -199,26 +199,6 @@ img {
 
 /* ========================================================================== */
 
-#oss_contrib table a{
-  float: left;
-  display: block;
-  color: var(--semi-container-a-0-font-color);
-  text-align: center;
-  padding: var(--padding-2);
-  border-radius: var(--a-border-radius-0);
-  margin-left: 0.8%;
-  margin-right: 0.8%;
-  text-decoration: none;
-  font-size: var(--font-size-1);
-  background-color: var(--semi-container-a-0-bg-color);
-}
-
-/* Change the color of links on hover */
-#oss_contrib table a:hover {
-  background-color: var(--semi-container-a-0-hover-bg-color) ;
-  color: var(--semi-container-a-0-hover-font-color);
-}
-
 #oss_contrib table img{
   min-width: 200px;
 }
