@@ -137,7 +137,7 @@
           <p style="text-align:justify;
                     text-justify:inter-word;
                     margin-top: 4%;">
-            I am a 21-year-old, 3rd-year Undergraduate Student. I am currently pursuing my Bachelors's degree in Computer Science from Jaypee Institute of Information Technology, Noida-128. I define myself as a Curious Learner. I am always eager to learn new technologies and methods. For me, the best way to learn is to code it.
+            I am a <span id="age">unknown</span>-year-old, 3rd-year Undergraduate Student. I am currently pursuing my Bachelors's degree in Computer Science from Jaypee Institute of Information Technology, Noida-128. I define myself as a Curious Learner. I am always eager to learn new technologies and methods. For me, the best way to learn is to code it.
           </p>
 
           <p style="text-align:justify;
@@ -671,6 +671,13 @@
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
       }
+
+      var birth = new Date('1999-03-11');
+      var now = new Date();
+      var difference = now - birth;
+      // Dates are set from 1970, so remove that to get the year
+      var age = new Date(difference).getFullYear() - 1970
+      document.getElementById('age').innerHTML = age;
       </script>
 
   </body>
